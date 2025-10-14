@@ -28,27 +28,47 @@
             {{ k.text }}
           </button>
         </div>
+        <div id="toast" class="toast"> コピー完了ᴖ ̫ᴖ </div>
       </main>
     </div>
   </template>
   
-  <script setup>
-  import { ref, computed, onMounted } from 'vue'
+  <script setup lang="ts">
+  import { ref, computed } from 'vue'
   import kaomojiData from '../../public/kaomoji.json'
-  
-  const currentFilter = ref('all')
-  const categories = ['all', 'happy', 'sad', 'face']
-  
-  const filteredKaomoji = computed(() =>
-    currentFilter.value === 'all'
-      ? kaomojiData
-      : kaomojiData.filter(k => k.category === currentFilter.value)
-  )
-  
-  function copyKaomoji(text) {
-    navigator.clipboard.writeText(text)
-    alert(`コピーしました: ${text}`)
+
+  interface Kaomoji {
+    text: string
+    categories: string[]
   }
+
+  const data = kaomojiData as Kaomoji[]
+  
+  const currentFilter = ref<string>('すべて')
+  const categories = computed<string[]>(() => {
+  const uniqueCategories = new Set<string>()
+    kaomojiData.forEach(k => k.categories.forEach(c => uniqueCategories.add(c)))
+    return ['すべて', ...Array.from(uniqueCategories)]
+  })
+
+  const filteredKaomoji = computed<Kaomoji[]>(() => {
+  if (currentFilter.value === 'すべて') return kaomojiData
+  return kaomojiData.filter(k => k.categories.includes(currentFilter.value))
+  })
+  
+  function copyKaomoji(text: string) {
+    navigator.clipboard.writeText(text).then(() => {
+    showToast();
+  });
+  }
+
+  function showToast() {
+  const toast = document.getElementById("toast");
+  toast?.classList.add("show");
+  setTimeout(() => {
+    toast?.classList.remove("show");
+  }, 2000); // 2秒後に消える
+}
   </script>
   
   <style scoped>
