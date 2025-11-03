@@ -11,9 +11,10 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'かわいい顔文字コレクション',
+      title: 'かわいい顔文字コレクション | SNSにコピペで使える★',
       meta: [
-        { name: 'description', content: 'SNSへの投稿に使えるかわいい顔文字です。クリックでコピーできます★' },
+        { name: 'description', content: 'SNSへの投稿に使える可愛い顔文字です。クリックでコピーできます★' },
+        { name: 'keywords', content: '顔文字, かわいい, kaomoji, SNS, コピペ, オタク, 推し活' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
         // OGP設定

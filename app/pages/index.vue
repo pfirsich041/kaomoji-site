@@ -2,7 +2,7 @@
     <div class="min-h-screen bg-gradient-to-b from-pink-50 to-pink-100 p-6">
       <header>
         <h1 class="text-3xl font-bold text-center mb-6">かわいい顔文字コレクションᴖ ᴈ ᴖ</h1>
-        <p>SNSへの投稿に使えるかわいい顔文字です´ᴗ ·̫ ᴗ`<br>
+        <p>SNSへの投稿に使える可愛い顔文字です´ᴗ ·̫ ᴗ`<br>
           クリックでコピーできます⊂( ᴖ ̫ᴖ)⊃ ⊂(ᴖ ̫ᴖ )⊃</p>
       </header>
       <main>
