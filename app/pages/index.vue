@@ -36,6 +36,7 @@
   <script setup lang="ts">
   import { ref, computed } from 'vue'
   import kaomojiData from '../../public/kaomoji.json'
+  import Header from '~/components/Header.vue';
 
   interface Kaomoji {
     text: string
