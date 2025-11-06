@@ -30,4 +30,7 @@ export default defineNuxtConfig({
     ['nuxt-gtag', { id: 'G-QS8RYCF5L7' }],
     '@nuxt/content',
   ],
+  css:[
+    'github-markdown-css/github-markdown-light.css'
+  ]
 })

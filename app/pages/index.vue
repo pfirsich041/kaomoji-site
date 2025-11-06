@@ -1,28 +1,24 @@
 <template>
-    <div class="min-h-screen bg-gradient-to-b from-pink-50 to-pink-100 p-6">
-      <header>
-        <h1 class="text-3xl font-bold text-center mb-6">かわいい顔文字コレクションᴖ ᴈ ᴖ</h1>
-        <p>SNSへの投稿に使える可愛い顔文字です´ᴗ ·̫ ᴗ`<br>
-          クリックでコピーできます⊂( ᴖ ̫ᴖ)⊃ ⊂(ᴖ ̫ᴖ )⊃</p>
-      </header>
-      <main>
+    <div class="min-h-screen">
+      <Header></Header>
+      <main class="flex gap-2 justify-center flex-col items-center">
         <div class="flex gap-2 justify-center mb-4 controls">
         <button
           v-for="cat in categories"
           :key="cat"
           @click="currentFilter = cat"
-          class="px-4 py-1 rounded-full border border-pink-400"
+          class=" rounded-full border border-pink-400"
           :class="currentFilter === cat ? 'bg-pink-200' : ''"
         >
           {{ cat }}
         </button>
         </div>
     
-        <div class="flex flex-wrap gap-3 justify-center container">
+        <div class="flex flex-wrap gap-1 justify-center">
           <button
             v-for="k in filteredKaomoji"
             :key="k.text"
-            class="bg-white rounded-2xl shadow px-4 py-2 hover:bg-pink-50 cursor-pointer kaomoji"
+            class="bg-white rounded-2xl hover:bg-pink-50 cursor-pointer kaomoji"
             @click="copyKaomoji(k.text)"
           >
             {{ k.text }}
@@ -112,12 +108,6 @@ main{
     text-align: center; 
     display: flex;
     gap: 4px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.container{
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
