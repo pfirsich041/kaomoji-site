@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
   css:[
-    'github-markdown-css/github-markdown-light.css'
+    'github-markdown-css/github-markdown-light.css',
+    './app/assets/css/style.css',
   ]
 })

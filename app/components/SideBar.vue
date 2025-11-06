@@ -1,18 +1,22 @@
 <template>
     <aside >
         <div class="space-y-6 flex flex-col w-64">
-            <div>Logo</div>
-            <card class="p-6 bg-white border-2 border-pink-100 rounded-lg">
-                関連記事
-            </card>
-            <card class="p-6 bg-gradient-to-br from-pink-100 to yellow-100 border-2 border-pink-200 rounded-lg">
+            <card class="p-6 bg-gradient-to-br from-pink-100 to yellow-100 border-2 border-pink-200 rounded-2xl">
                 <div>
                     <h3 class="mb-2 text-gray-800">もっと顔文字を探す</h3>
-                    <button class="w-full bg-pink-500 hover:bg-pink-600 text-white rounded-full">ライブラリをみる</button>
+                    <div class="flex justify-center h-20 items-center">
+                        ^-^
+                    </div>
+                    <NuxtLink to="/">
+                    <button class="w-full h-10 bg-pink-500 hover:bg-pink-600 text-white rounded-full">ライブラリをみる</button>
+                    </NuxtLink>
                 </div>
             </card>
         </div>
     </aside>
 </template>
 <script setup lang="ts">
+const { data: page } = await useAsyncData('all-notes',() =>
+    queryCollection('docs').all()
+)
 </script>

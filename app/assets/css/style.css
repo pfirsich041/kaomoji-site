@@ -1,0 +1,20 @@
+.markdown-body h1,
+.markdown-body h2 a,
+.markdown-body h3 a,
+.markdown-body h4 a,
+.markdown-body h5 a{
+    color: oklch(65.6% 0.241 354.308);
+}
+
+.markdown-body a{
+    color: oklch(65.6% 0.241 354.308);
+}
+
+.markdown-body a:hover{
+    color: oklch(71.8% 0.202 349.761);
+    text-decoration: none;
+}
+
+.markdown-body li{
+    list-style: disc;
+}

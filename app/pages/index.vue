@@ -1,7 +1,8 @@
 <template>
     <div class="min-h-screen">
       <Header></Header>
-      <main class="flex gap-2 justify-center flex-col items-center">
+      <div class="flex justify-center">
+      <main class="container">
         <div class="flex gap-2 justify-center mb-4 controls">
         <button
           v-for="cat in categories"
@@ -26,6 +27,7 @@
         </div>
         <div id="toast" class="toast"> コピー完了ᴖ ̫ᴖ </div>
       </main>
+    </div>
     </div>
   </template>
   

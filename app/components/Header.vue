@@ -6,7 +6,7 @@
       <span class="ml-3 text-xl">かわいい顔文字コレクションᴖ ᴈ ᴖ</span>
     </a>
     <NuxtLink to="/">
-      <button class="inline-flex items-center bg-pink-400 text-white border-0 py-1 px-3 focus:outline-none hover:bg-pink-500 rounded-lg text-base mt-4 md:mt-0">
+      <button class="inline-flex items-center bg-pink-500 text-white border-0 py-3 px-6 focus:outline-none hover:bg-pink-600 rounded-full text-base mt-4 md:mt-0">
           顔文字一覧
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
