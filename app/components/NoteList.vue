@@ -1,14 +1,15 @@
 <template>
-    <div>
+    <div class="container">
         <ContentRenderer v-if="page" :value="page" />
-        <div class="flex flex-wrap gap-8 container mx-auto justify-center">
-                <ArticleCard
-                    v-for="item in page"
-                    :key="item.id"
-                    :title="item.title"
-                    :path="item.path"
-                ></ArticleCard>
-        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    <ArticleCard
+                        v-for="item in page"
+                        :key="item.id"
+                        :image="item.meta.thumbnail"
+                        :title="item.title"
+                        :path="item.path"
+                    ></ArticleCard>
+            </div>
     </div>
 
 </template>

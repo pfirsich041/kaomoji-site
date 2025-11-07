@@ -1,33 +1,34 @@
 <template>
-    <div class="min-h-screen">
+    <div class="min-h-screen bg-pink-50">
       <Header></Header>
       <div class="flex justify-center">
-      <main class="container">
-        <div class="flex gap-2 justify-center mb-4 controls">
-        <button
-          v-for="cat in categories"
-          :key="cat"
-          @click="currentFilter = cat"
-          class=" rounded-full border border-pink-400"
-          :class="currentFilter === cat ? 'bg-pink-200' : ''"
-        >
-          {{ cat }}
-        </button>
-        </div>
-    
-        <div class="flex flex-wrap gap-1 justify-center">
+        <main class="container">
+          <div class="flex gap-2 justify-center mb-4 controls">
           <button
-            v-for="k in filteredKaomoji"
-            :key="k.text"
-            class="bg-white rounded-2xl hover:bg-pink-50 cursor-pointer kaomoji"
-            @click="copyKaomoji(k.text)"
+            v-for="cat in categories"
+            :key="cat"
+            @click="currentFilter = cat"
+            class=" rounded-full border border-pink-400"
+            :class="currentFilter === cat ? 'bg-pink-200' : ''"
           >
-            {{ k.text }}
+            {{ cat }}
           </button>
-        </div>
-        <div id="toast" class="toast"> コピー完了ᴖ ̫ᴖ </div>
-      </main>
-    </div>
+          </div>
+      
+          <div class="flex flex-wrap gap-1 justify-center">
+            <button
+              v-for="k in filteredKaomoji"
+              :key="k.text"
+              class="bg-white rounded-2xl hover:bg-pink-50 cursor-pointer kaomoji"
+              @click="copyKaomoji(k.text)"
+            >
+              {{ k.text }}
+            </button>
+          </div>
+          <div id="toast" class="toast"> コピー完了ᴖ ̫ᴖ </div>
+        </main>
+      </div>
+    <Footer></Footer>
     </div>
   </template>
   

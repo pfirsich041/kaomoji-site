@@ -1,3 +1,7 @@
+.markdown-body{
+    color: #4b5563; /* text-gray-600 */
+}
+
 .markdown-body h1,
 .markdown-body h2 a,
 .markdown-body h3 a,
@@ -17,4 +21,10 @@
 
 .markdown-body li{
     list-style: disc;
+}
+
+.markdown-body .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }

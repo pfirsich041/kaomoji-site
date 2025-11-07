@@ -1,20 +1,36 @@
 <template>
+  <div class="bg-pink-50 text-gray-600">
     <Header></Header>
-    <main class="flex gap-8 px-8 py-9 justify-center container mx-auto">
-      <div class="flex flex-col gap-8">
-        <NuxtLink class="text-pink-500" to="/notes">←記事一覧に戻る</NuxtLink>
-        <article class="border-2 border-pink-200 rounded-2xl p-8 overflow-hidden markdown-body">
-          <div v-if="page">
-            <div>
-              <h2>{{ page.title }}</h2>
+    <main class="container mx-auto">
+      <div class="grid lg:grid-cols-12 gap-10 my-10">
+        <div class="col-span-12 lg:col-span-8 space-y-6">
+          <NuxtLink class="text-pink-500" to="/notes">←記事一覧に戻る</NuxtLink>
+          <article class="border-2 border-pink-200 rounded-2xl overflow-hidden markdown-body bg-white">
+            <div v-if="page">
+              <div class="relative w-full aspect-[16/9]">
+                <img class="w-full h-auto object-cover" :src="page.meta.thumbnail" alt="">
+              </div>
+              <div class="p-8">
+                <h2>{{ page.title }}</h2>
+                {{ page.meta.date }}
+                <div class="flex gap-2 my-4">
+                  <button class="bg-pink-500 hover:bg-pink-600 text-white text-xs rounded-full px-2 py-1" v-for="tag in page.meta.tags">
+                  #{{ tag }}
+                </button>
+                </div>
+                <ContentRenderer :value="page" />
+              </div>
             </div>
-            <ContentRenderer :value="page" />
-          </div>
-          <p v-else>該当する記事がありません。</p>
-        </article>
+            <p v-else>該当する記事がありません。</p>
+          </article>
+        </div>
+        <div class="col-span-12 lg:col-span-4 hidden lg:block">
+          <SideBar></SideBar> 
+        </div>
       </div>
-      <SideBar></SideBar> 
     </main>
+    <Footer></Footer>
+    </div>
 </template>
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
