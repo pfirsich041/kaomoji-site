@@ -14,7 +14,7 @@
     </div>
     <div class="my-8">
         <h2 class="flex justify-center text-xl">記事</h2>
-        <div class="grid grid-cols-3 gap-8 my-8">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 my-8">
             <ArticleCard
                 v-for="item in page"
                 :key="item.id"
