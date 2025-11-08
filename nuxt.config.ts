@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'かわいい顔文字コレクション | SNSにコピペで使える★',
+      title: 'sns cutie archive | SNSにコピペで使える★',
       meta: [
         { name: 'description', content: 'SNSへの投稿に使える可愛い顔文字です。クリックでコピーできます★' },
         { name: 'keywords', content: '顔文字, かわいい, kaomoji, SNS, コピペ, オタク, 推し活' },
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         { name: 'google-site-verification', content: 'ov4P4Tog9TXs9ZSuiOHFRueHs25thXs13l7wf5C7jQk' },
         // OGP設定
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'かわいい顔文字コレクション' },
+        { property: 'og:site_name', content: 'sns cutie archive' },
         { property: 'og:url', content: 'https://kawaiikaomoji.netlify.app/' },
       ]
     }

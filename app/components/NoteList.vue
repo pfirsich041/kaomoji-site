@@ -6,6 +6,8 @@
                         v-for="item in page"
                         :key="item.id"
                         :image="item.meta.thumbnail"
+                        :date = "item.meta.date"
+                        :category = "item.meta.tags"
                         :title="item.title"
                         :path="item.path"
                     ></ArticleCard>

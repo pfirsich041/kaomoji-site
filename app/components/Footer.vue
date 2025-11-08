@@ -2,10 +2,10 @@
   <footer class="text-gray-600 body-font bg-white">
   <div class="container px-5 py-8 my-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <NuxtLink to="/" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         <img class="w-10 h-10" src="/images/Logo.png" alt="">
         <span class="ml-3 text-l">sns cutie archive</span>
-      </a>
+      </NuxtLink>
       <p class="mt-2 text-sm text-gray-500">SNSへの投稿に使える可愛い顔文字です´ᴗ ·̫ ᴗ`<br>
         クリックでコピーできます⊂( ᴖ ̫ᴖ)⊃ ⊂(ᴖ ̫ᴖ )⊃</p>
     </div>
@@ -25,7 +25,7 @@
   </div>
   <div class="bg-gray-100">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 かわいい顔文字コレクション
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 sns cutie archive
         <!-- <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a> -->
       </p>
       <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

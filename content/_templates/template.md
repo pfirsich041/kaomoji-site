@@ -1,6 +1,10 @@
 ---
 title: "テンプレート"
-date: "2025-11-6"
+date: "2025-10-22"
+tags: ["Webデザイン", "フロントエンド"]
+thumbnail: "/images/thumbnail.jpg"
+description: "Zenn風のデザインで、やさしい配色のCMS風UIを実現する方法を紹介します。"
+slug: "reiwa-ui"
 ---
 
 ## はじめに（見出し）
