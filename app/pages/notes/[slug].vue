@@ -4,7 +4,7 @@
     <main class="container mx-auto">
       <div class="lg:grid lg:grid-cols-12 gap-10 my-10">
         <div class="col-span-12 lg:col-span-8 space-y-6">
-          <NuxtLink class="text-pink-500" to="/notes">←記事一覧に戻る</NuxtLink>
+          <NuxtLink class="text-pink-500 font-bold" to="/notes">←記事一覧に戻る</NuxtLink>
           <article class="border-2 border-pink-200 rounded-2xl overflow-hidden markdown-body bg-white">
             <div v-if="page">
               <div class="relative w-full aspect-[16/9]">

@@ -13,6 +13,7 @@
                     </NuxtLink>
                 </div>
             </card>
+        
         </div>
     </aside>
 </template>
