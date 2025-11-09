@@ -1,7 +1,7 @@
 <template>
     <aside >
         <div class="space-y-6 flex flex-col">
-            <card class="p-6 bg-white border-pink-200 rounded-2xl">
+            <card class="p-6 bg-white border-2 border-pink-200 rounded-2xl">
                 <div>
                     <h3 class="mb-2 text-gray-800">もっと顔文字を探す</h3>
                     <div class="flex justify-center h-20 items-center text-xs">
@@ -13,6 +13,7 @@
                     </NuxtLink>
                 </div>
             </card>
+
         </div>
     </aside>
 </template>
