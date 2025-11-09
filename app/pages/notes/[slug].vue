@@ -36,7 +36,7 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
-const { data: page } = await useAsyncData('docs',() =>
+const { data: page } = await useAsyncData(`notes-${route.path}`,() =>
   queryCollection('docs').path(route.path).first()
 )
 </script>
