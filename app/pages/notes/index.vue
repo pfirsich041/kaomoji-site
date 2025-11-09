@@ -5,7 +5,7 @@
             <h2 class="container flex justify-center text-2xl my-10">記事一覧</h2>
         </div>
         <div class="container mx-auto">
-            <div class="grid lg:grid-cols-12 gap-10">
+            <div class="lg:grid lg:grid-cols-12 gap-10">
                 <div class="col-span-12 lg:col-span-8">
                     <NoteList></NoteList>
                 </div>
