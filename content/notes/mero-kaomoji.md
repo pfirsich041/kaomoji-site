@@ -2,7 +2,7 @@
 title: "【コピペOK】SNSで使える「メロい」顔文字まとめ🎀"
 date: "2025-11-09"
 tags: ["顔文字", "SNS", "オタク"]
-thumbnail: "/images/cry-kaomoji.jpg"
+thumbnail: "/images/mero-kaomoji.jpg"
 description: "メロい顔文字を紹介します。"
 ---
 
