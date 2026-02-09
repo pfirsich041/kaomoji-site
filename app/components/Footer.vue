@@ -16,9 +16,9 @@
           <li>
             <NuxtLink to="/" class="text-gray-600 hover:text-gray-800 text-sm">顔文字ライブラリ</NuxtLink>
           </li>
-          <li>
+          <!-- <li>
             <NuxtLink to="/notes" class="text-gray-600 hover:text-gray-800 text-sm">記事一覧</NuxtLink>
-          </li>
+          </li> -->
         </nav>
       </div>
       <div class="lg:w-1/3 md:w-1/2 w-full px-4">

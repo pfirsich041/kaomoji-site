@@ -8,9 +8,9 @@
                         サイト内の顔文字が全て見られるライブラリ<br>
                         すぐにコピペできます♡
                     </div>
-                    <NuxtLink to="/library">
+                    <!-- <NuxtLink to="/library">
                     <button class="w-full h-10 bg-pink-500 hover:bg-pink-600 text-white rounded-full">ライブラリをみる</button>
-                    </NuxtLink>
+                    </NuxtLink> -->
                 </div>
             </card>
 
