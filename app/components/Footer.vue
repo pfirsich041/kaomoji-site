@@ -58,16 +58,16 @@
 			<div
 				class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
 			>
-				<!-- <p class="text-gray-500 text-sm text-center sm:text-left">
+				<p class="text-gray-500 text-sm text-center sm:text-left">
 					© 2025 sns cutie archive
-					<a
+					<!-- <a
 						href="https://x.com/snscutiearchive"
 						rel="noopener noreferrer"
 						class="text-gray-600 ml-1"
 						target="_blank"
 						>@snscutiearchive</a
-					>
-				</p> -->
+					> -->
+				</p>
 				<span
 					class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
 				>
