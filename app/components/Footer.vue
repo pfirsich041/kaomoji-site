@@ -68,7 +68,7 @@
 						>@snscutiearchive</a
 					>
 				</p>
-				<span
+				<!-- <span
 					class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
 				>
 					<a class="text-gray-500">
@@ -132,7 +132,7 @@
 							<circle cx="4" cy="4" r="2" stroke="none"></circle>
 						</svg>
 					</a>
-				</span>
+				</span> -->
 			</div>
 		</div>
 	</footer>
