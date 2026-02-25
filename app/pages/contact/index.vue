@@ -26,6 +26,7 @@
 						type="text"
 						name="name"
 						id="name"
+						v-model="form.name"
 						placeholder="おなまえ"
 						required
 					/>
@@ -37,6 +38,7 @@
 						type="email"
 						name="email"
 						id="email"
+						v-model="form.email"
 						placeholder="mail@example.com"
 						required
 					/>
@@ -47,6 +49,7 @@
 					<textarea
 						name="message"
 						id="message"
+						v-model="form.message"
 						rows="5"
 						placeholder="メッセージや追加してほしい顔文字のリクエストなど"
 						required
