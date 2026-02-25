@@ -62,7 +62,6 @@
 
 <style scoped>
 body {
-	background-color: #ffe4e8;
 	box-sizing: border-box;
 }
 
