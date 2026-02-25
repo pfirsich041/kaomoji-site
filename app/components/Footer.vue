@@ -50,6 +50,13 @@
 								>プライバシーポリシー</NuxtLink
 							>
 						</li>
+						<li>
+							<NuxtLink
+								to="/contact"
+								class="text-gray-600 hover:text-gray-800 text-sm"
+								>お問い合わせ</NuxtLink
+							>
+						</li>
 					</nav>
 				</div>
 			</div>
@@ -77,11 +84,6 @@
 						data-show-count="false"
 						>Follow @snscutiearchive</a
 					>
-					<script
-						async
-						src="https://platform.twitter.com/widgets.js"
-						charset="utf-8"
-					></script>
 				</span>
 			</div>
 		</div>
