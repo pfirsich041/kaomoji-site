@@ -1,6 +1,6 @@
 <template>
 	<Header></Header>
-	<body class="bg-pink-50">
+	<div class="bg-pink-50">
 		<div class="thanks-container">
 			<div class="icon-wrapper">
 				<span class="sparkle">✨</span>
@@ -17,7 +17,7 @@
 
 			<router-link to="/" class="back-btn"> ホームに戻る </router-link>
 		</div>
-	</body>
+	</div>
 	<Footer></Footer>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<Header></Header>
-	<body class="bg-pink-50">
+	<div class="bg-pink-50">
 		<div class="contact-container">
 			<h1 class="title">Contact 🎀</h1>
 			<p class="subtitle">お問い合わせ・リクエストはこちらから</p>
@@ -56,7 +56,7 @@
 				<button type="submit" class="submit-btn">送信</button>
 			</form>
 		</div>
-	</body>
+	</div>
 	<Footer></Footer>
 </template>
 
