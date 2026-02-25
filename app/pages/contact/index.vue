@@ -10,7 +10,7 @@
 				method="POST"
 				data-netlify="true"
 				netlify-honeypot="bot-field"
-				@submit.prevent="handleSubmit"
+				action="/thanks/"
 				class="contact-form"
 			>
 				<input type="hidden" name="form-name" value="contact" />
@@ -26,7 +26,6 @@
 						type="text"
 						name="name"
 						id="name"
-						v-model="form.name"
 						placeholder="おなまえ"
 						required
 					/>
@@ -38,7 +37,6 @@
 						type="email"
 						name="email"
 						id="email"
-						v-model="form.email"
 						placeholder="mail@example.com"
 						required
 					/>
@@ -49,7 +47,6 @@
 					<textarea
 						name="message"
 						id="message"
-						v-model="form.message"
 						rows="5"
 						placeholder="メッセージや追加してほしい顔文字のリクエストなど"
 						required
@@ -62,38 +59,6 @@
 	</div>
 	<Footer></Footer>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
-const form = ref({
-	name: '',
-	email: '',
-	message: '',
-});
-
-const handleSubmit = async () => {
-	const formData = new FormData();
-	formData.append('form-name', 'contact');
-	formData.append('name', form.value.name);
-	formData.append('email', form.value.email);
-	formData.append('message', form.value.message);
-
-	try {
-		await fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(formData).toString(),
-		});
-		// 送信が成功したら、自作のthanksページへ遷移させる
-		router.push('/thanks');
-	} catch (error) {
-		alert('送信に失敗しました。');
-	}
-};
-</script>
 
 <style scoped>
 body {
