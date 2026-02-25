@@ -10,7 +10,7 @@
 				method="POST"
 				data-netlify="true"
 				netlify-honeypot="bot-field"
-				action="/thanks/"
+				action="/thanks/index.html"
 				class="contact-form"
 			>
 				<input type="hidden" name="form-name" value="contact" />
