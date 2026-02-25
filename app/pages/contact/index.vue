@@ -10,7 +10,7 @@
 				method="POST"
 				data-netlify="true"
 				netlify-honeypot="bot-field"
-				action="/thanks/index.html"
+				@submit.prevent="handleSubmit"
 				class="contact-form"
 			>
 				<input type="hidden" name="form-name" value="contact" />
@@ -59,6 +59,38 @@
 	</div>
 	<Footer></Footer>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+const form = ref({
+	name: '',
+	email: '',
+	message: '',
+});
+
+const handleSubmit = async () => {
+	const formData = new FormData();
+	formData.append('form-name', 'contact');
+	formData.append('name', form.value.name);
+	formData.append('email', form.value.email);
+	formData.append('message', form.value.message);
+
+	try {
+		await fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(formData).toString(),
+		});
+		// 送信が成功したら、自作のthanksページへ遷移させる
+		router.push('/thanks');
+	} catch (error) {
+		alert('送信に失敗しました。');
+	}
+};
+</script>
 
 <style scoped>
 body {
